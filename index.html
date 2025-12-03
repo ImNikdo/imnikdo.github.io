@@ -35,7 +35,8 @@
                 <h3>Kategorie</h3>
                 <ul>
                     <li><a href="index.html">Úvod</a></li>
-                    <li><a href="#">Technologie</a></li>
+                    <li><a href="#">Zeměpis</a></li>
+                    <li><a href="#">Deníček <span> adjektivum </span> maturanta </a></li>
                     <li><a href="#">Cestování</a></li>
                     <li><a href="#">Brno</a></li>
                     <li><a href="Osobni.html">Osobní</a></li>
@@ -50,6 +51,30 @@
     <footer>
         <p>&copy; 2024 Blog by Nikdo___. Všechna práva vyhrazena.</p>
     </footer>
+
+<script>
+    const slova = [
+        "deprimovaného",
+        "unaveného",
+        "vystresovaného",
+        "zoufalého",
+        "prokrastinujícího",
+        "vyčerpaného",
+        "nervózního",
+        "panikařícího",
+        "rezignovaného",
+        "zmateného",
+    ];
+
+    // vybere náhodné přídavné jméno
+    const nahodne = slova[Math.floor(Math.random() * slova.length)];
+
+    // vloží ho do HTML
+    document.getElementById("adjektivum").textContent = nahodne;
+</script>
+
+
+    
 </body>
 </html>
 
